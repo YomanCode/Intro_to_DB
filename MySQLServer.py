@@ -18,8 +18,8 @@ def create_database(hostname, user, password, database_name):
 
             cursor.close()
 
-    except Error as e:
-        print(f"Error: {e}")
+    except mysql.connector.error:
+        print(f"Error")
 
     finally:
         if connection.is_connected():

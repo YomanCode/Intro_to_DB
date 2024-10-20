@@ -18,7 +18,7 @@ def create_database(hostname, user, password, database_name):
 
             cursor.close()
 
-    except mysql.connector.error:
+    except mysql.connector.Error:
         print(f"Error")
 
     finally:

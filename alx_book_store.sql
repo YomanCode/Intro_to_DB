@@ -1,4 +1,4 @@
-USE alx_book_store
+USE alx_book_store;
 
 CREATE TABLE Books(
     book_id INT PRIMARY KEY,
